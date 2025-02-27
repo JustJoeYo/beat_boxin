@@ -1,4 +1,4 @@
-require './node.rb'
+require 'node.rb'
 
 class LinkedList
   attr_reader :head
