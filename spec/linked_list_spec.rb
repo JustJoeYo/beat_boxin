@@ -18,4 +18,21 @@ RSpec.describe LinkedList do
       expect(@list.head).to eq(nil)
     end
   end
+
+  describe 'methods' do
+    it '#append' do
+      @list.append('doop')
+      expect(@list.head.data).to eq('doop')
+    end
+
+    it '#count' do
+      @list.append('doop')
+      expect(@list.count).to eq(1)
+    end
+
+    it '#to_string' do
+      @list.append('doop')
+      expect(@list.to_string).to eq('doop')
+    end
+  end
 end
